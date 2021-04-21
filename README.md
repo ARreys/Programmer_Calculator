@@ -11,7 +11,7 @@ This initiative was created after a personal analysis of the need for this tool 
 
 
 - Translation methods;
-- Javascript Language;
+- Javascript;
 - CSS;
 - Html;
 
