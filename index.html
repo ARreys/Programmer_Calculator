@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input class="painel" disabled id="painel">
+            <div class="painel">
+                <div class="scene scene2">
+                    <div class="cube cube2">
+                        <div class="secondary-container duo cube__face cube__face--top ">
+                            <button class="number" onclick="typeNumberX = 0">BIN</button>
+                            <button class="number" onclick="typeNumberX = 1">OCT</button>
+                            <button class="number" onclick="typeNumberX = 2">DEC</button>
+                            <button class="number" onclick="typeNumberX = 3">HEX</button>
+                        </div>
+                        <div class="secondary-container duo cube__face cube2__face--front ">
+                            <button class="number number2" onclick="operation('+', false)">+</button>
+                            <button class="number number2" onclick="operation('-', false)">-</button>
+                            <button class="number number2" onclick="operation('x', false)">x</button>
+                            <button class="number number2" onclick="operation('/', false)">/</button>
+                        </div>
+                    </div>
+                </div>
+                <input class="switch" id="switch" type="checkbox">
+            </div>
+            <div class="numbers">
+                <div class="containerNumbers">
+                    <div class="scene">
+                        <div class="cube primaryCube">
+                            <div class="secondary-container cube__face cube__face--front">
+                                <div class="rowNumber">
+                                    <button class="number" onclick="setNumber(1)">1</button>
+                                    <button class="number" onclick="setNumber(2)">2</button>
+                                    <button class="number" onclick="setNumber(3)">3</button>
+                                </div>
+                                <div class="rowNumber">
+                                    <button class="number" onclick="setNumber(4)">4</button>
+                                    <button class="number" onclick="setNumber(5)">5</button>
+                                    <button class="number" onclick="setNumber(6)">6</button>
+                                </div>
+                                <div class="rowNumber">
+                                    <button class="number" onclick="setNumber(7)">7</button>
+                                    <button class="number" onclick="setNumber(8)">8</button>
+                                    <button class="number" onclick="setNumber(9)">9</button>
+                                </div>
+                                <div class="rowNumber">
+                                    <button class="number" onclick="setNumber(0)">0</button>
+                                </div>
+                            </div>
+                            <div class="secondary-container cube__face cube__face--right">
+                                <div class="rowNumber rowNumber2">
+                                    <input class="painel painel2" id="numberY">
+                                </div>
+                                <div class="rowNumber rowNumber2">
+                                    <button class="number number2" onclick="typeNumberY = 0">BIN</button>
+                                    <button class="number number2" onclick="typeNumberY = 1">OCT</button>
+                                    <button class="number number2" onclick="typeNumberY = 2">DEC</button>
+                                    <button class="number number2" onclick="typeNumberY = 3">HEX</button>
+                                </div>
+                                <div class="rowNumber rowNumber2">
+                                    <button class="number number2" onclick="operation('+', true)">+</button>
+                                    <button class="number number2" onclick="operation('-', true)">-</button>
+                                    <button class="number number2" onclick="operation('x', true)">x</button>
+                                    <button class="number number2" onclick="operation('/', true)">/</button>
+                                </div>
+                                <div class="rowNumber rowNumber2">
+                                    <button class="number" id="btEquals2">=</button>
+                                    <button class="number" onclick="reset()">C</button>
+                                </div>
+                                <div class="rowNumber rowNumber2">
+                                    <input disabled class="painel painel2" id="result">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="painel ">
+                <div class="scene">
+                    <div class="cube cube2">
+                        <div class="secondary-container duo cube__face cube__face--top ">
+                            <button class="number" onclick="translateResult(0)">BIN</button>
+                            <button class="number" onclick="translateResult(1)">OCT</button>
+                            <button class="number" onclick="translateResult(2)">DEC</button>
+                            <button class="number" onclick="translateResult(3)">HEX</button>
+                        </div>
+                        <div class="secondary-container duo cube__face cube2__face--front ">
+                            <button class="number" onclick="reset()">C</button>
+                            <button class="number" id="btEquals">=</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js "></script>
+</body>
+
+</html>
