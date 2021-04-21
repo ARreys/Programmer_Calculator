@@ -9,10 +9,13 @@ This initiative was created after a personal analysis of the need for this tool 
 
 #  Tools
 
-- Java Language;
-- Swing Library;
+
 - Translation methods;
-- Netbeans IDE.
+- Javascript;
+- CSS;
+- Html;
+
+
 
 # Screenshots
 
