@@ -36,7 +36,6 @@ cientificSwitch.addEventListener("change", function() {
 
 const btEquals = document.getElementById("btEquals")
 btEquals.addEventListener("click", function() {
-    console.log(numberX, mathOperation, numberY)
     result = eval(numberX + mathOperation + numberY);
     XorY = false
     numberX = result
@@ -74,7 +73,6 @@ function translateResult(type) {
     y = translate(functionsResult, type, y);
     typeResult = type;
     document.getElementById('result').value = y;
-    console.log(mathOperation)
 }
 
 function reset() {
